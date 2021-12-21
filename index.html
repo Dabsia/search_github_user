@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Github User Finder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>devFinder</h2>
+            <p class = 'light'>Light <i class=" sun ri-sun-line"></i></p>
+        </header>
+
+        <div class="errorMessage">
+            Please Enter A valid Github Username
+        </div>
+
+        <div class="inputDiv">
+            <i class="ri-search-line search"></i>
+            <input type="text" class = 'input__field' placeholder="Search Github Username_"> 
+            <button>Search</button>
+        </div>
+        <main>
+                <div class="img">
+                    <img src="./images/download.png" alt="github image">
+                </div>
+                <section>
+                        <div class="user__details">
+                            <p class="username">The Octocat</p>
+                            <p class="year">Joined <span class="year__joined">25 June 2011</span></p>
+                        </div>
+                <p class="twitterUser">Nil</p>
+                <p class="bio">This User has no bio</p>
+
+                <div class="acctDetails">
+                    <div class="repos">
+                        <p class="repo">Repo</p>
+                        <div class="repoNumber">8</div>
+                    </div>
+                    <div class="followers">
+                        <p class="followersList">Followers</p>
+                        <div class="followersNumber">3938</div>
+                    </div>
+                    <div class="following">
+                        <p class="followingList">Following</p>
+                        <div class="followingNumber">9</div>
+                    </div>
+                </div>
+                <div class="firstBox">
+                    <div class="socials">
+                        <i class="icon ri-map-pin-line"></i>
+                        <p class = 'location'>San Francisco</p>
+                    </div>
+                    <div class="twitter">
+                        <i class="icon ri-twitter-fill"></i>
+                        <p class = 'handle'>Not Available</p>
+                    </div>
+                </div>
+                <div class="secondBox">
+                    <div class="website">
+                        <i class="ri-links-line icon"></i>
+                        <p class = 'url'>https://github.blog</p>
+                    </div>
+                    <div class="website">
+                        <i class="icon ri-building-fill"></i>
+                        <p class = 'work'>aGithub</p>
+                    </div>
+                </div>
+        </main>
+        
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

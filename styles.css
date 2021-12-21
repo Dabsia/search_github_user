@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body{
+    background-color: #141C2F;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+}
+.container{
+    width: 60vw;
+    height: 70vh
+}
+h2{
+    font-size:2.5rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff
+}
+.light{
+    margin-top: .4rem;
+    font-size: 1.8rem;
+}
+.sun{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.inputDiv{
+    height: 4.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+    padding: 0 3rem;
+    background-color: #1F2A48;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-size: 1.7rem;
+    width: 70%;
+    background-color: #1F2A48;
+    color: #fff;
+}
+input::placeholder{
+    color: rgb(218, 213, 213);
+}
+.search{
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: .8rem;
+    color: rgb(45, 93, 165);
+}
+button{
+    background-color: #1271DE;
+    outline: none;
+    border: none;
+    display: block;
+    height: 80%;
+    margin-top: .5rem;
+    width: 13rem;
+    border-radius: .7rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+main{
+    height: 60vh;
+    width:100%;
+    padding: 3.5rem;
+    margin-top: 3rem;
+    background-color: #1F2A48;
+    border-radius: .7rem;
+    justify-content: space-between;
+    display: flex;
+}
+section{
+    width: 80%
+}
+.img{
+    height: 10rem;
+    width: 10rem;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.user__details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.username, .year, .year__joined{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.twitterUser{
+    margin-top: 1.3rem;
+    color: rgb(45, 93, 165);
+    font-size: 1.6rem;
+}
+.bio{
+    margin-top: 1.3rem;
+    color: rgb(218, 213, 213);
+    font-size: 1.4rem;
+
+}
+.acctDetails{
+    height: 6rem;
+    width: 100%;
+    background-color: #141C2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 0 3rem
+
+}
+.repo, .repoNumber, .followersList, .followersNumber, .followingList, .followingNumber{
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+.firstBox, .secondBox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.4rem
+}
+
+.twitter, .socials {
+    display: flex;
+    margin-top: 1rem;
+    width: 50%
+}
+.website, .twitter{
+    display: flex;
+    margin-top: 1rem;
+    width: 40%
+}
+.location, .handle, .url, .work{
+    font-size: 1.6rem;
+    color: rgb(180, 177, 177);   
+}
+.icon{
+    font-size: 1.8rem;
+    color: #fff;   
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
+.work{
+    margin-top: 0;
+}
+.errorMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+    text-align: center;
+}
+
+@media screen and (max-width :770px) {
+    .container{
+        width: 90%
+    }
+    .inputDiv{    
+        padding: 0 2rem;
+    }
+    main{
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width :670px) {
+    .firstBox, .secondBox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .img{
+        margin: auto;
+        margin-bottom: 1.3rem;
+    }
+    .username{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .inputDiv{    
+        padding: 0 1rem;
+        padding-left: 2.6rem;
+    }
+    section{
+        width: 100%;
+    }
+    .user__details{
+        flex-direction: column;
+    }
+    .location, .handle, .url, .work{
+        font-size: 1.6rem;
+        color: rgb(180, 177, 177);   
+    }
+    .twitter, .socials {
+        display: flex;
+        margin-top: 1rem;
+        width: 100%
+    }
+    .website, .twitter{
+        display: flex;
+        margin-top: 1rem;
+        width: 100%
+    }
+    button{
+        height: 80%;
+        width: 7rem;
+        font-size: 1.4rem;
+    }
+    .bio{
+        font-size: 1.8rem;
+    }
+}
