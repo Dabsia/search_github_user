@@ -6,8 +6,8 @@ let followers = document.querySelector('.followersNumber')
 let repos = document.querySelector('.repoNumber')
 let following = document.querySelector('.followingNumber')
 let bio = document.querySelector('.bio')
-let twitterHandle = document.querySelector('.location')
-let userlocation = document.querySelector('.handle')
+let twitterHandle = document.querySelector('.handle')
+let userlocation = document.querySelector('.location')
 let url = document.querySelector('.url')
 let work = document.querySelector('.work');
 let ErrorMessage = document.querySelector('.errorMessage')
@@ -51,7 +51,7 @@ const searchUser =() => {
                 work.textContent = 'Not Available'
             }
             else{
-                work.textContent = data.location
+                work.textContent = data.company
             }
         })
         .catch(e => console.log(e))
