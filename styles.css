@@ -175,6 +175,11 @@ img{
     display: none;
     text-align: center;
 }
+.NameofUser{
+    font-size: 1.6rem;
+    margin-top: .5rem;
+    color: #fff;
+}
 
 @media screen and (max-width :770px) {
     .container{

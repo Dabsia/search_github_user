@@ -10,7 +10,9 @@ let twitterHandle = document.querySelector('.handle')
 let userlocation = document.querySelector('.location')
 let url = document.querySelector('.url')
 let work = document.querySelector('.work');
-let ErrorMessage = document.querySelector('.errorMessage')
+let ErrorMessage = document.querySelector('.errorMessage');
+let nameOfUser = document.querySelector('.NameofUser');
+let year_joined = document.querySelector('.year__joined');
 
 const searchUser =() => {
     if (username.value === ''){
@@ -41,6 +43,12 @@ const searchUser =() => {
             else{
                 twitterHandle.textContent = data.twitter_username
             }
+            if (data.name === null){
+                nameOfUser.textContent = 'Not Available'
+            }
+            else{
+                nameOfUser.textContent = data.name
+            }
             if (data.location === null){
                 userlocation.textContent = 'Not Available'
             }
@@ -53,6 +61,11 @@ const searchUser =() => {
             else{
                 work.textContent = data.company
             }
+
+            let create_date = data.created_at
+            let main_date = create_date.split('T')
+            year_joined.textContent = main_date[0]
+
         })
         .catch(e => console.log(e))
     }
